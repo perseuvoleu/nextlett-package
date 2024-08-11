@@ -16,9 +16,6 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - run: npm install --frozen-lockfile
-      - run: npm install --save-dev @changesets/cli
-      - run: npm install -g @changesets/cli
-
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
